@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-20 22:46+0000\n"
+"POT-Creation-Date: 2024-10-09 22:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -44,12 +44,20 @@ msgstr ""
 msgid "An Old Hope"
 msgstr ""
 
+#: inc/settings-reset.php:38
+msgid "and"
+msgstr ""
+
 #: prismatic.php:266
 msgid "and try again."
 msgstr ""
 
 #: lib/highlight/themes.php:25
 msgid "Androidstudio"
+msgstr ""
+
+#: inc/settings-reset.php:40
+msgid "Apply code"
 msgstr ""
 
 #: lib/highlight/themes.php:29
@@ -62,6 +70,10 @@ msgstr ""
 
 #: lib/highlight/themes.php:37
 msgid "Ascetic"
+msgstr ""
+
+#: inc/settings-reset.php:40
+msgid "at checkout. Sale ends 12/21/24."
 msgstr ""
 
 #: lib/highlight/themes.php:41
@@ -156,12 +168,12 @@ msgstr ""
 msgid "Atom One Light"
 msgstr ""
 
-#: lib/highlight/themes.php:142
-msgid "Brown Paper"
+#: inc/settings-reset.php:39
+msgid "books"
 msgstr ""
 
-#: inc/settings-reset.php:36
-msgid "Buy one get one FREE with code"
+#: lib/highlight/themes.php:142
+msgid "Brown Paper"
 msgstr ""
 
 #: prismatic.php:311 prismatic.php:317
@@ -224,7 +236,7 @@ msgstr ""
 msgid "Disable the Prismatic block stylesheet on the frontend"
 msgstr ""
 
-#: inc/settings-reset.php:113
+#: inc/settings-reset.php:115
 msgid "Dismiss"
 msgstr ""
 
@@ -267,6 +279,10 @@ msgstr ""
 msgid "Escape code for post excerpts in the Admin Area"
 msgstr ""
 
+#: inc/settings-reset.php:35
+msgid "Fall Sale!"
+msgstr ""
+
 #: lib/highlight/themes.php:174
 msgid "Far"
 msgstr ""
@@ -285,10 +301,6 @@ msgstr ""
 
 #: prismatic.php:223
 msgid "Get Prismatic Pro!"
-msgstr ""
-
-#: inc/settings-reset.php:38
-msgid "Get&nbsp;plugins&nbsp;&raquo;"
 msgstr ""
 
 #: lib/highlight/themes.php:185
@@ -477,10 +489,6 @@ msgid ""
 "Optional CSS to include on all pages (do *not* include &lt;style&gt; tags)"
 msgstr ""
 
-#: inc/settings-reset.php:37
-msgid "or take 30% off with code"
-msgstr ""
-
 #: lib/highlight/themes.php:303
 msgid "Paraiso Dark"
 msgstr ""
@@ -519,14 +527,14 @@ msgstr ""
 msgid "Prismatic"
 msgstr ""
 
-#: inc/settings-reset.php:35
-msgid "Pro Plugin Sale!"
-msgstr ""
-
 #: prismatic.php:264
 msgid ""
 "Pro version of Prismatic currently active. Free and Pro versions cannot be "
 "activated at the same time. "
+msgstr ""
+
+#: inc/settings-reset.php:37
+msgid "Pro WordPress plugins"
 msgstr ""
 
 #: lib/highlight/themes.php:318
@@ -653,6 +661,10 @@ msgstr ""
 
 #: inc/settings-register.php:48
 msgid "Support no-prefix class names"
+msgstr ""
+
+#: inc/settings-reset.php:36
+msgid "Take 25% OFF any of our"
 msgstr ""
 
 #: inc/settings-callbacks.php:7
