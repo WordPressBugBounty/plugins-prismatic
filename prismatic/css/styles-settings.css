@@ -21,6 +21,7 @@
 .wp-resources .wp-resources-wrap { width: 100%; overflow: hidden; }
 .wp-resources img { display: block; width: 125px; height: 125px; margin: 0; padding: 0; border: 0; background-color: #fff; color: #fff; }
 .wp-resources a { float: left; width: 125px; height: 125px; margin: 7px 15px 3px 0; padding: 1px; border: 1px solid #ccc; opacity: 0.9; }
+.wp-resources a:link, .wp-resources a:visited, .wp-resources a:hover, .wp-resources a:after { box-shadow: none; }
 .wp-resources a:hover { opacity: 1.0; }
 
 .wp-admin .notice code { line-height: 1; font-size: 12px; }

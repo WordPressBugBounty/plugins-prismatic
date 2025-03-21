@@ -58,14 +58,14 @@ registerBlockType('prismatic/blocks', {
 				{ label : 'Apache',        value : 'apache' },
 				{ label : 'AppleScript',   value : 'applescript' },
 				{ label : 'Arduino',       value : 'arduino' },
-				{ label : 'AVR Assembly',  value : 'avrasm' },
+				{ label : 'AVR Assembler', value : 'avrasm' },
+				{ label : 'Awk',           value : 'awk' },
 				{ label : 'Bash',          value : 'bash' },
 				{ label : 'C',             value : 'c' },
-				{ label : 'C#',            value : 'cs' },
-				{ label : 'C++',           value : 'cpp' },
-				{ label : 'CSS',           value : 'css' },
 				{ label : 'CoffeeScript',  value : 'coffeescript' },
-				
+				{ label : 'C++',           value : 'cpp' },
+				{ label : 'C#',            value : 'cs' },
+				{ label : 'CSS',           value : 'css' },
 				{ label : 'D',             value : 'd' },
 				{ label : 'Dart',          value : 'dart' },
 				{ label : 'Diff',          value : 'diff' },
@@ -75,30 +75,27 @@ registerBlockType('prismatic/blocks', {
 				{ label : 'Go',            value : 'go' },
 				{ label : 'GraphQL',       value : 'graphql' },
 				{ label : 'Groovy',        value : 'groovy' },
-				{ label : 'HTML/XML',      value : 'xml' },
-				
 				{ label : 'HTTP',          value : 'http' },
 				{ label : 'Ini/TOML',      value : 'ini' },
-				{ label : 'JSON',          value : 'json' },
 				{ label : 'Java',          value : 'java' },
 				{ label : 'JavaScript',    value : 'javascript' },
+				{ label : 'JSON',          value : 'json' },
 				{ label : 'Julia',         value : 'julia' },
 				{ label : 'Kotlin',        value : 'kotlin' },
 				{ label : 'LaTeX',         value : 'tex' },
 				{ label : 'Less',          value : 'less' },
 				{ label : 'Lua',           value : 'lua' },
-				
 				{ label : 'Makefile',      value : 'makefile' },
 				{ label : 'Markdown',      value : 'markdown' },
 				{ label : 'Matlab',        value : 'matlab' },
 				{ label : 'Nginx',         value : 'nginx' },
 				{ label : 'Objective-C',   value : 'objectivec' },
-				{ label : 'PHP',           value : 'php' },
 				{ label : 'Perl',          value : 'perl' },
+				{ label : 'PHP',           value : 'php' },
+				{ label : 'PHP Template',  value : 'php-template' },
 				{ label : 'Plaintext',     value : 'plaintext' },
 				{ label : 'PowerShell',    value : 'powershell' },
 				{ label : 'Properties',    value : 'properties' },
-				
 				{ label : 'Python',        value : 'python' },
 				{ label : 'Python REPL',   value : 'python-repl' },
 				{ label : 'R',             value : 'r' },
@@ -109,18 +106,16 @@ registerBlockType('prismatic/blocks', {
 				{ label : 'SCSS',          value : 'scss' },
 				{ label : 'Shell Session', value : 'shell' },
 				{ label : 'SQL',           value : 'sql' },
-				
 				{ label : 'Swift',         value : 'swift' },
 				{ label : 'TypeScript',    value : 'typescript' },
 				{ label : 'VB.Net',        value : 'vbnet' },
 				{ label : 'Verilog',       value : 'verilog' },
 				{ label : 'VHDL',          value : 'vhdl' },
 				{ label : 'Vim Script',    value : 'vim' },
+				{ label : 'XML/HTML',      value : 'xml' },
 				{ label : 'YAML',          value : 'yaml' },
 			];
 			
-			// note: PHP Template, WebAssembly not added because they are not documented anywhere, so not sure about the slug/value
-		
 		function onChangeContent(newValue) {
 			props.setAttributes({ content: newValue });
 		}

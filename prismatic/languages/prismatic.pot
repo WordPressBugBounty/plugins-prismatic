@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-09 22:05+0000\n"
+"POT-Creation-Date: 2025-03-21 17:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/"
 
-#: prismatic.php:289
+#: prismatic.php:288
 msgid " or higher, and has been deactivated! "
 msgstr ""
 
@@ -48,7 +48,7 @@ msgstr ""
 msgid "and"
 msgstr ""
 
-#: prismatic.php:266
+#: prismatic.php:265
 msgid "and try again."
 msgstr ""
 
@@ -73,7 +73,7 @@ msgid "Ascetic"
 msgstr ""
 
 #: inc/settings-reset.php:40
-msgid "at checkout. Sale ends 12/21/24."
+msgid "at checkout. Sale ends 6/25/2025."
 msgstr ""
 
 #: lib/highlight/themes.php:41
@@ -176,15 +176,15 @@ msgstr ""
 msgid "Brown Paper"
 msgstr ""
 
-#: prismatic.php:311 prismatic.php:317
+#: prismatic.php:304 prismatic.php:310
 msgid "Cheatin&rsquo; huh?"
 msgstr ""
 
-#: inc/settings-display.php:144
+#: inc/settings-display.php:146
 msgid "Check out more WordPress resources from this developer:"
 msgstr ""
 
-#: prismatic.php:217
+#: prismatic.php:216
 msgid "Click here to rate and review this plugin on WordPress.org"
 msgstr ""
 
@@ -279,10 +279,6 @@ msgstr ""
 msgid "Escape code for post excerpts in the Admin Area"
 msgstr ""
 
-#: inc/settings-reset.php:35
-msgid "Fall Sale!"
-msgstr ""
-
 #: lib/highlight/themes.php:174
 msgid "Far"
 msgstr ""
@@ -299,7 +295,7 @@ msgstr ""
 msgid "General"
 msgstr ""
 
-#: prismatic.php:223
+#: prismatic.php:222
 msgid "Get Prismatic Pro!"
 msgstr ""
 
@@ -311,7 +307,7 @@ msgstr ""
 msgid "GML"
 msgstr ""
 
-#: prismatic.php:224
+#: prismatic.php:223
 msgid "Go&nbsp;Pro"
 msgstr ""
 
@@ -352,7 +348,7 @@ msgstr ""
 msgid "Highlight.js"
 msgstr ""
 
-#: prismatic.php:212
+#: prismatic.php:211
 msgid "Homepage"
 msgstr ""
 
@@ -408,7 +404,7 @@ msgstr ""
 msgid "Lightfair"
 msgstr ""
 
-#: prismatic.php:243
+#: prismatic.php:242
 msgid "Like Prismatic? Give it a"
 msgstr ""
 
@@ -501,11 +497,11 @@ msgstr ""
 msgid "Plain Flavor"
 msgstr ""
 
-#: prismatic.php:265 prismatic.php:290
+#: prismatic.php:264 prismatic.php:289
 msgid "Please return to the"
 msgstr ""
 
-#: prismatic.php:211
+#: prismatic.php:210
 msgid "Plugin Homepage"
 msgstr ""
 
@@ -527,7 +523,7 @@ msgstr ""
 msgid "Prismatic"
 msgstr ""
 
-#: prismatic.php:264
+#: prismatic.php:263
 msgid ""
 "Pro version of Prismatic currently active. Free and Pro versions cannot be "
 "activated at the same time. "
@@ -557,11 +553,11 @@ msgstr ""
 msgid "Rainbow"
 msgstr ""
 
-#: prismatic.php:218
+#: prismatic.php:217
 msgid "Rate this plugin"
 msgstr ""
 
-#: prismatic.php:288
+#: prismatic.php:287
 msgid "requires WordPress "
 msgstr ""
 
@@ -585,7 +581,7 @@ msgstr ""
 msgid "School Book"
 msgstr ""
 
-#: prismatic.php:197
+#: prismatic.php:196
 msgid "Settings"
 msgstr ""
 
@@ -643,6 +639,10 @@ msgstr ""
 msgid "Solarized Light"
 msgstr ""
 
+#: inc/settings-reset.php:35
+msgid "Spring Sale!"
+msgstr ""
+
 #: lib/highlight/themes.php:361
 msgid "Srcery"
 msgstr ""
@@ -664,14 +664,14 @@ msgid "Support no-prefix class names"
 msgstr ""
 
 #: inc/settings-reset.php:36
-msgid "Take 25% OFF any of our"
+msgid "Take 30% OFF any of our"
 msgstr ""
 
 #: inc/settings-callbacks.php:7
 msgid "Thank you for using the free version of"
 msgstr ""
 
-#: prismatic.php:291
+#: prismatic.php:290
 msgid "to upgrade WordPress and try again."
 msgstr ""
 
@@ -707,15 +707,15 @@ msgstr ""
 msgid "Vs 2015"
 msgstr ""
 
-#: prismatic.php:263
+#: prismatic.php:262
 msgid "Warning:"
 msgstr ""
 
-#: prismatic.php:265 prismatic.php:291
+#: prismatic.php:264 prismatic.php:290
 msgid "WP Admin Area"
 msgstr ""
 
-#: inc/settings-display.php:142
+#: inc/settings-display.php:144
 msgid "WP Resources"
 msgstr ""
 
@@ -735,6 +735,6 @@ msgstr ""
 msgid "Zenburn"
 msgstr ""
 
-#: prismatic.php:247
+#: prismatic.php:246
 msgid "★★★★★ rating&nbsp;&raquo;"
 msgstr ""

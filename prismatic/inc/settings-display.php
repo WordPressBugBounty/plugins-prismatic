@@ -98,29 +98,31 @@ function prismatic_wp_resources($tab_active) {
 		
 		$array = array(
 			
-			0  => '<a target="_blank" rel="noopener noreferrer" href="https://digwp.com/" title="Take your WP skills to the next level"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/book-digging-into-wordpress.jpg" alt="Digging Into WordPress"></a>',
+			0  => '<a target="_blank" rel="noopener noreferrer" href="https://digwp.com/" title="Take your WP skills to the next level"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/book-digging-into-wordpress.jpg" alt=""></a>',
 			
-			1  => '<a target="_blank" rel="noopener noreferrer" href="https://htaccessbook.com/" title="Secure and optimize your website"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/book-htaccess-made-easy.jpg" alt=".htaccess made easy"></a>',
+			1  => '<a target="_blank" rel="noopener noreferrer" href="https://htaccessbook.com/" title="Secure and optimize your website"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/book-htaccess-made-easy.jpg" alt=""></a>',
 			
-			2  => '<a target="_blank" rel="noopener noreferrer" href="https://wp-tao.com/" title="Learn the Way of WordPress"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/book-tao-of-wordpress.jpg" alt="The Tao of WordPress"></a>',
+			2  => '<a target="_blank" rel="noopener noreferrer" href="https://wp-tao.com/" title="Learn the Way of WordPress"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/book-tao-of-wordpress.jpg" alt=""></a>',
 			
-			3  => '<a target="_blank" rel="noopener noreferrer" href="https://books.perishablepress.com/downloads/wizards-collection-sql-recipes-wordpress/" title="Wizard&rsquo;s SQL Recipes for WordPress"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/book-wizards-sql-wordpress.jpg" alt="Wizard&rsquo;s SQL Recipes for WordPress"></a>',
+			3  => '<a target="_blank" rel="noopener noreferrer" href="https://books.perishablepress.com/downloads/wizards-collection-sql-recipes-wordpress/" title="Wizard&rsquo;s SQL Recipes for WordPress"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/book-wizards-sql-wordpress.jpg" alt=""></a>',
 			
-			4  => '<a target="_blank" rel="noopener noreferrer" href="https://wp-tao.com/wordpress-themes-book/" title="Build and sell awesome themes"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/book-wp-themes-in-depth.jpg" alt="WordPress Themes In Depth"></a>',
+			4  => '<a target="_blank" rel="noopener noreferrer" href="https://wp-tao.com/wordpress-themes-book/" title="Build and sell awesome themes"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/book-wp-themes-in-depth.jpg" alt=""></a>',
 			
 			//
 			
-			5  => '<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/banhammer-pro/" title="Banhammer Pro: Drop the hammer."><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/plugin-banhammer-pro.jpg" alt="Banhammer Pro"></a>',
+			5  => '<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/banhammer-pro/" title="Banhammer Pro: Drop the hammer."><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/plugin-banhammer-pro.jpg" alt=""></a>',
 			
-			6  => '<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/bbq-pro/" title="Fastest WordPress Firewall"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/plugin-bbq-pro.jpg" alt="BBQ Pro Firewall"></a>',	
+			6  => '<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/bbq-pro/" title="Fastest WordPress Firewall"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/plugin-bbq-pro.jpg" alt=""></a>',	
 						
-			7  => '<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/blackhole-pro/" title="Trap bad bots in a virtual black hole"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/plugin-blackhole-pro.jpg" alt="Blackhole Pro"></a>',
+			7  => '<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/blackhole-pro/" title="Trap bad bots in a virtual black hole"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/plugin-blackhole-pro.jpg" alt=""></a>',
 			
-			8  => '<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/ga-google-analytics-pro/" title="Connect Google Analytics to WordPress"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/plugin-ga-pro.jpg" alt="GA Google Analytics Pro"></a>',
+			8  => '<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/ga-google-analytics-pro/" title="Connect Google Analytics to WordPress"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/plugin-ga-pro.jpg" alt=""></a>',
 			
-			9  => '<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/simple-ajax-chat-pro/" title="Unlimited chats for WordPress"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/plugin-sac-pro.jpg" alt="Simple Ajax Chat Pro"></a>',
+			9  => '<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/head-meta-pro/" title="Ultimate meta tags for WordPress"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/head-meta-pro.jpg" alt=""></a>',
+			
+			10 => '<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/simple-ajax-chat-pro/" title="Unlimited chats for WordPress"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/plugin-sac-pro.jpg" alt=""></a>',
 					
-			10  => '<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/usp-pro/" title="Unlimited front-end forms"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/plugin-usp-pro.jpg" alt="USP Pro"></a>',
+			11 => '<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/usp-pro/" title="Unlimited front-end forms"><img width="125" height="125" src="'. PRISMATIC_URL .'img/resources/plugin-usp-pro.jpg" alt=""></a>',
 			
 		);
 		

@@ -342,21 +342,19 @@ function prismatic_active_languages_loop($library, $excerpt, $content, $comments
 		
 		foreach($class as $cls) {
 			
-			if (strpos($excerpt, $cls) !== false) {
-				
-				$languages[] = $cls;
-				
-			}
+			//
 			
-			if (strpos($content, $cls) !== false) {
+			if ($library === 'prism') {
 				
-				$languages[] = $cls;
+				if ($excerpt && preg_match("/(\s|\")(" . $cls . ")(\s|\")/", $excerpt)) {
+					
+					$languages[] = $cls;
+					
+				}
 				
-			}
-			
-			foreach ($comments as $comment) {
+			} else {
 				
-				if (strpos($comment->comment_content, $cls) !== false) {
+				if ($excerpt && strpos($excerpt, $cls) !== false) {
 					
 					$languages[] = $cls;
 					
@@ -364,13 +362,71 @@ function prismatic_active_languages_loop($library, $excerpt, $content, $comments
 				
 			}
 			
+			//
+			
+			if ($library === 'prism') {
+				
+				if ($content && preg_match("/(\s|\")(" . $cls . ")(\s|\")/", $content)) {
+					
+					$languages[] = $cls;
+					
+				}
+				
+			} else {
+				
+				if ($content && strpos($content, $cls) !== false) {
+					
+					$languages[] = $cls;
+					
+				}
+				
+			}
+			
+			//
+			
+			foreach ($comments as $comment) {
+				
+				if ($library === 'prism') {
+					
+					if ($comment->comment_content && preg_match("/(\s|\")(" . $cls . ")(\s|\")/", $comment->comment_content)) {
+						
+						$languages[] = $cls;
+						
+					}
+					
+				} else {
+					
+					if ($comment->comment_content && strpos($comment->comment_content, $cls) !== false) {
+						
+						$languages[] = $cls;
+						
+					}
+					
+				}
+				
+			}
+			
+			//
+			
 			if ($fields) {
 				
 				foreach ($fields as $key => $value) {
 					
-					if (is_string($value) && strpos($value, $cls) !== false) {
+					if ($library === 'prism') {
 						
-						$languages[] = $cls;
+						if ($value && is_string($value) && preg_match("/(\s|\")(" . $cls . ")(\s|\")/", $value)) {
+							
+							$languages[] = $cls;
+							
+						}
+						
+					} else {
+						
+						if ($value && is_string($value) && strpos($value, $cls) !== false) {
+							
+							$languages[] = $cls;
+							
+						}
 						
 					}
 					
@@ -395,37 +451,34 @@ function prismatic_prism_classes() {
 		array(
 			'language-apacheconf', 
 			'language-applescript', 
-			'language-arduino',
-			'language-avr',
+			'language-arduino', 
+			'language-asmatmel', 
+			'language-awk', 
 			'language-bash', 
 			'language-batch', 
 			'language-c', 
-			'language-csharp', 
-			'language-cpp', 
 			'language-clike', 
-			
 			'language-coffeescript', 
+			'language-cpp', 
+			'language-csharp', 
 			'language-css', 
-			'language-d',
-			'language-dart',
+			'language-d', 
+			'language-dart', 
 			'language-diff', 
 			'language-elixir', 
 			'language-gcode', 
 			'language-git', 
 			'language-go', 
 			'language-graphql', 
-			
-			'language-groovy',
+			'language-groovy', 
 			'language-hcl', 
-			'language-html',
 			'language-http', 
 			'language-ini', 
 			'language-java', 
 			'language-javascript', 
 			'language-json', 
-			'language-jsx',
-			'language-julia',
-			
+			'language-jsx', 
+			'language-julia', 
 			'language-kotlin', 
 			'language-latex', 
 			'language-liquid', 
@@ -433,11 +486,10 @@ function prismatic_prism_classes() {
 			'language-makefile', 
 			'language-markdown', 
 			'language-markup', 
-			'language-matlab',
+			'language-matlab', 
 			'language-nginx', 
 			'language-objectivec', 
-			
-			'language-pascal',
+			'language-pascal', 
 			'language-perl', 
 			'language-php', 
 			'language-powerquery', 
@@ -447,74 +499,70 @@ function prismatic_prism_classes() {
 			'language-ruby', 
 			'language-rust', 
 			'language-sas', 
-			
 			'language-sass', 
 			'language-scala',
 			'language-scss', 
 			'language-shell-session', 
 			'language-solidity', 
-			'language-sparql',
+			'language-sparql', 
 			'language-splunk-spl', 
 			'language-sql', 
 			'language-swift', 
 			'language-tsx', 
-			
 			'language-turtle', 
 			'language-twig',
-			'language-typescript',
-			'language-verilog',
-			'language-vhdl',
-			'language-vim',
-			'language-visual-basic',
-			'language-yaml',
+			'language-typescript', 
+			'language-verilog', 
+			'language-vhdl', 
+			'language-vim', 
+			'language-visual-basic', 
+			'language-yaml', 
 			
 			// aliases
 			
-			'language-mathml',
-			'language-rss',
-			'language-ssml',
-			'language-svg',
-			'language-xml',
+			'language-html', 
+			'language-mathml', 
+			'language-rss', 
+			'language-ssml', 
+			'language-svg', 
+			'language-xml', 
 			
 			// none
 			
-			'language-none',
+			'language-none'
 		),
 		
 		array(
 			'lang-apacheconf', 
 			'lang-applescript', 
-			'lang-arduino',
-			'lang-avr',
+			'lang-arduino', 
+			'lang-asmatmel', 
+			'lang-awk', 
 			'lang-bash', 
 			'lang-batch', 
 			'lang-c', 
-			'lang-csharp', 
-			'lang-cpp', 
 			'lang-clike', 
-			
 			'lang-coffeescript', 
+			'lang-cpp', 
+			'lang-csharp', 
 			'lang-css', 
-			'lang-d',
-			'lang-dart',
+			'lang-d', 
+			'lang-dart', 
 			'lang-diff', 
 			'lang-elixir', 
 			'lang-gcode', 
 			'lang-git', 
 			'lang-go', 
-			'lang-graphql',
-			
-			'lang-groovy',
+			'lang-graphql', 
+			'lang-groovy', 
 			'lang-hcl', 
-			'lang-html', 
 			'lang-http', 
 			'lang-ini', 
 			'lang-java', 
 			'lang-javascript', 
 			'lang-json', 
-			'lang-jsx',
-			'lang-julia',
-			
+			'lang-jsx', 
+			'lang-julia', 
 			'lang-kotlin', 
 			'lang-latex', 
 			'lang-liquid', 
@@ -524,50 +572,48 @@ function prismatic_prism_classes() {
 			'lang-markup', 
 			'lang-matlab', 
 			'lang-nginx', 
-			'lang-objectivec',
-			
+			'lang-objectivec', 
 			'lang-pascal', 
 			'lang-perl', 
 			'lang-php', 
-			'lang-powerquery',
-			'lang-powershell',
+			'lang-powerquery', 
+			'lang-powershell', 
 			'lang-python', 
 			'lang-r', 
 			'lang-ruby', 
 			'lang-rust', 
 			'lang-sas', 
-			
 			'lang-sass', 
 			'lang-scala',
 			'lang-scss', 
 			'lang-shell-session', 
 			'lang-solidity', 
-			'lang-sparql',
+			'lang-sparql', 
 			'lang-splunk-spl', 
 			'lang-sql', 
-			'lang-swift',
-			'lang-tsx',
-			
+			'lang-swift', 
+			'lang-tsx', 
 			'lang-turtle', 
 			'lang-twig',
-			'lang-typescript',
-			'lang-verilog',
-			'lang-vhdl',
-			'lang-vim',
-			'lang-visual-basic',
-			'lang-yaml',
+			'lang-typescript', 
+			'lang-verilog', 
+			'lang-vhdl', 
+			'lang-vim', 
+			'lang-visual-basic', 
+			'lang-yaml', 
 			
 			// aliases
 			
+			'lang-html', 
 			'lang-mathml', 
 			'lang-rss', 
 			'lang-ssml', 
-			'lang-svg',
+			'lang-svg', 
 			'lang-xml', 
 			
-			//
+			// none
 			
-			'lang-none',
+			'lang-none'
 			
 		)
 		
