@@ -103,7 +103,7 @@ function prismatic_prism_enqueue() {
 	
 	$languages = prismatic_active_languages('prism');
 	
-	$languages = array_filter($languages);
+	$languages = apply_filters('prismatic_prism_enqueue_languages', array_filter($languages));
 	
 	if (!empty($languages)) {
 		

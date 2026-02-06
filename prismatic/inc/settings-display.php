@@ -133,7 +133,7 @@ function prismatic_wp_resources($tab_active) {
 		$item3 = isset($array[$items[2]]) ? $array[$items[2]] : null;
 		$item4 = isset($array[$items[3]]) ? $array[$items[3]] : null;
 		
-		if ($item1 && $item3 && $item3 && $item4) :
+		if ($item1 && $item2 && $item3 && $item4) :
 		
 		?>
 			

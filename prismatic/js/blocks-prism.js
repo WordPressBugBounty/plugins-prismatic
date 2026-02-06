@@ -9,11 +9,12 @@ var
 	RawHTML           = wp.editor.RawHTML,
 	InspectorControls = wp.blockEditor.InspectorControls,
 	SelectControl     = wp.components.SelectControl,
+	TextControl       = wp.components.TextControl,
 	applyFilters      = wp.hooks.applyFilters,
 	__                = wp.i18n.__;
 
 registerBlockType('prismatic/blocks', {
-
+	
 	title    : 'Prismatic',
 	icon     : 'editor-code',
 	category : 'formatting',
@@ -34,6 +35,10 @@ registerBlockType('prismatic/blocks', {
 			type    : 'string',
 			default : '',
 		},
+		lineHighlight : {
+			type      : 'string',
+			default   : '',
+		},
 		backgroundColor : {
 			type    : 'string',
 			default : '#f7f7f7',
@@ -43,18 +48,19 @@ registerBlockType('prismatic/blocks', {
 			default : '#373737',
 		},
 	},
-
+	
 	edit : function(props) {
 		
 		var 
 			content         = props.attributes.content,
 			language        = props.attributes.language,
+			lineHighlight   = props.attributes.lineHighlight,
 			backgroundColor = props.attributes.backgroundColor,
 			textColor       = props.attributes.textColor,
 			className       = props.className,
 			languages       = [
 				{ label : 'Language..',    value : '' },
-				
+				//
 				{ label : 'Apache',        value : 'apacheconf' },
 				{ label : 'AppleScript',   value : 'applescript' },
 				{ label : 'Arduino',       value : 'arduino' },
@@ -129,8 +135,12 @@ registerBlockType('prismatic/blocks', {
 			props.setAttributes({ content: newValue });
 		}
 		
-		function onChangelanguage(newValue) {
+		function onChangeLanguage(newValue) {
 			props.setAttributes({ language: newValue });
+		}
+		
+		function onChangeLineHighlight(newValue) {
+			props.setAttributes({ lineHighlight: newValue });
 		}
 		
 		return (
@@ -145,15 +155,24 @@ registerBlockType('prismatic/blocks', {
 						{
 							label    : __('Select Language for Prism.js', 'prismatic'),
 							value    : language,
-							onChange : onChangelanguage,
+							onChange : onChangeLanguage,
 							options  : applyFilters('prismaticPrismMenu', languages),
 						}
-					)
+					),
+					el(
+						TextControl,
+						{
+							label    : __('Highlight Lines for Prism.js', 'prismatic'),
+							value    : lineHighlight,
+							onChange : onChangeLineHighlight,
+							value    : lineHighlight,
+						}
+					),
 				),
 				el(
 					PlainText,
 					{
-						tagName     : 'pre',
+						tagname     : 'pre',
 						key         : 'editable',
 						placeholder : __('Add code..', 'prismatic'),
 						className   : className,
@@ -169,10 +188,11 @@ registerBlockType('prismatic/blocks', {
 	save : function(props) {
 		
 		var 
-			content  = props.attributes.content,
-			language = props.attributes.language;
+			content       = props.attributes.content,
+			language      = props.attributes.language,
+			lineHighlight = props.attributes.lineHighlight;
 		
-		return el('pre', null, el('code', { className: 'language-'+ language }, content));
+		return el('pre', { 'data-line': lineHighlight }, el('code', { className: 'language-'+ language }, content));
 		
 	},
 });

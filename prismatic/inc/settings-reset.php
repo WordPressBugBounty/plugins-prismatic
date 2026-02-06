@@ -30,14 +30,14 @@ function prismatic_admin_notice() {
 			
 			?>
 			
-			<div class="notice notice-success notice-margin notice-custom">
+			<div class="notice notice-success notice-lh">
 				<p>
-					<strong><?php esc_html_e('Spring Sale!', 'prismatic'); ?></strong> 
-					<?php esc_html_e('Take 30% OFF any of our', 'prismatic'); ?> 
+					<strong><?php esc_html_e('❄️ Winter Sale!', 'prismatic'); ?></strong> 
+					<?php esc_html_e('Take 20% OFF any of our', 'prismatic'); ?> 
 					<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/"><?php esc_html_e('Pro WordPress plugins', 'prismatic'); ?></a> 
 					<?php esc_html_e('and', 'prismatic'); ?> 
 					<a target="_blank" rel="noopener noreferrer" href="https://books.perishablepress.com/"><?php esc_html_e('books', 'prismatic'); ?></a>. 
-					<?php esc_html_e('Apply code', 'prismatic'); ?> <code>SPRING2025</code> <?php esc_html_e('at checkout. Sale ends 6/25/2025.', 'prismatic'); ?> 
+					<?php esc_html_e('Apply code', 'prismatic'); ?> <code>WINTER20</code> <?php esc_html_e('at checkout. Sale ends 3/28/2026.', 'prismatic'); ?> 
 					<?php echo prismatic_dismiss_notice_link($tab); ?>
 				</p>
 			</div>
@@ -120,7 +120,7 @@ function prismatic_dismiss_notice_link($tab) {
 
 function prismatic_check_date_expired() {
 	
-	$expires = apply_filters('prismatic_check_date_expired', '2025-06-25');
+	$expires = apply_filters('prismatic_check_date_expired', '2026-03-28');
 	
 	return (new DateTime() > new DateTime($expires)) ? true : false;
 	

@@ -9,9 +9,9 @@ Contributors: specialk
 Author URI: https://plugin-planet.com/
 Donate link: https://monzillamedia.com/donate.html
 Requires at least: 4.7
-Tested up to: 6.8
-Stable tag: 3.5
-Version:    3.5
+Tested up to: 6.9
+Stable tag: 3.7.1
+Version:    3.7.1
 Requires PHP: 5.6.20
 Text Domain: prismatic
 Domain Path: /languages
@@ -23,15 +23,28 @@ Display beautiful syntax-highlighted code snippets with Prism.js or Highlight.js
 
 == Description ==
 
-__The only 3-in-1 syntax highlighter!__
+**Display Beautiful Code**
 
 Display beautiful code snippets with Prism.js, Highlight.js, or plain code escaping:
 
 * __Prism.js__     - Code escape + syntax highlight using [Prism.js](https://prismjs.com/)
 * __Highlight.js__ - Code escape + syntax highlight using [Highlight.js](https://highlightjs.org/)
-* __Plain Flavor__ - Code escape without syntax highlight
+* __Plain Flavor__ - Code escape without syntax highlighting
 
-Check out a [demo post using Highlight.js](https://dev-tricks.com/favorite-highlight-js-styles/). I also use this plugin at [WP-Mix](https://wp-mix.com/) and [Plugin Planet](https://plugin-planet.com/docs/) for all code snippets :)
+> 👉 The only 3-in-1 syntax highlighter!
+
+
+**Live Examples**
+
+Here are some live examples showing Prismatic displaying colorful code snippets:
+
+* [PHP highlighting](https://plugin-planet.com/usp-pro-support-additional-file-types/)
+* [CSS highlighting](https://perishablepress.com/all-css-filter-functions/)
+* [JavaScript highlighting](https://perishablepress.com/vanilla-javascript-add-class-to-image-links/)
+* [HTML highlighting](https://wp-mix.com/html5-starter-template/)
+* [Escaped code without highlighting](https://digwp.com/2019/07/better-inline-script/)
+
+Prismatic is used to display thousands of code snippets on the above sites. Also here is a post showing some [favorite Highlight.js styles](https://dev-tricks.com/favorite-highlight-js-styles/) :)
 
 
 **Prism.js Features**
@@ -90,15 +103,17 @@ Check out a [demo post using Highlight.js](https://dev-tricks.com/favorite-highl
 * Works with the Gutenberg Block Editor
 * Regularly updated and "future proof"
 
-_Prismatic escapes only the essentials to keep your code clean._
+> 👉 Prismatic escapes only the essentials to keep your code clean.
 
-[Check out the screenshots](https://wordpress.org/plugins/prismatic/screenshots/) for more details!
+> 👉 [Check out the screenshots](https://wordpress.org/plugins/prismatic/#screenshots) for more details!
+
 
 **Privacy**
 
 This plugin does not collect or store any user data. It does not set any cookies, and it does not connect to any third-party locations. Thus, this plugin does not affect user privacy in any way.
 
 Prismatic is developed and maintained by [Jeff Starr](https://x.com/perishable), 15-year [WordPress developer](https://plugin-planet.com/) and [book author](https://books.perishablepress.com/).
+
 
 **Support development**
 
@@ -112,7 +127,7 @@ I develop and maintain this free plugin with love for the WordPress community. T
 
 And/or purchase one of my premium WordPress plugins:
 
-* [BBQ Pro](https://plugin-planet.com/bbq-pro/) - Super fast WordPress firewall
+* [BBQ Pro](https://plugin-planet.com/bbq-pro/) - Blazing fast WordPress firewall
 * [Blackhole Pro](https://plugin-planet.com/blackhole-pro/) - Automatically block bad bots
 * [Banhammer Pro](https://plugin-planet.com/banhammer-pro/) - Monitor traffic and ban the bad guys
 * [GA Google Analytics Pro](https://plugin-planet.com/ga-google-analytics-pro/) - Connect WordPress to Google Analytics
@@ -148,7 +163,7 @@ Links, tweets and likes also appreciated. Thank you! :)
 2. Upload the plugin to your blog and activate
 3. Visit the plugin settings to configure options
 
-_[More info on installing WP plugins](https://wordpress.org/support/article/managing-plugins/#installing-plugins)_
+[More info on installing WP plugins](https://wordpress.org/documentation/article/manage-plugins/#installing-plugins-1)
 
 
 **Quick Start Guide**
@@ -169,7 +184,37 @@ To get a better idea, view the screenshots on the [Prismatic homepage](https://w
 The Prismatic block or button makes it easy to add your code snippet and choose a language. The plugin automatically will output the correct markup to display your code with syntax highlighting. No code editing required!
 
 
-**Complete Usage Documentation**
+**Add code via block for Highlight.js**
+
+When Highlight.js library is enabled in Prismatic plugin settings:
+
+1. When creating your post or page, select the Prismatic block
+2. Enter your code in the provided input field
+3. In block settings, select code language from the dropdown menu
+4. Optional: in block settings under Advanced tab, add extra CSS classes
+
+
+**Add code via block for Prism.js**
+
+When Prism.js library is enabled in Prismatic plugin settings:
+
+1. When creating your post or page, select the Prismatic block
+2. Enter your code in the provided input field
+3. In block settings, select code language from the dropdown menu
+4. Optional: in block settings under Advanced tab, add extra CSS classes
+5. Optional: in block settings, enter any line numbers to be highlighted
+
+
+**Add code via Classic Editor**
+
+When any library is enabled in Prismatic plugin settings:
+
+1. When creating your post or page, switch to the Visual Editor
+2. Click the Prismatic Quicktag button in the Toolbar, looks like &lt;&gt;
+3. Enter your code in the provided input field
+
+
+**Complete usage documentation**
 
 Learn more about Prismatic. Check out the [extended documentation](https://plugin-planet.com/wp/docs/prismatic.html) for complete information and tips.
 
@@ -179,22 +224,22 @@ Learn more about Prismatic. Check out the [extended documentation](https://plugi
 If you like Prismatic, please take a moment to [give a 5-star rating](https://wordpress.org/support/plugin/prismatic/reviews/?rate=5#new-post). It helps to keep development and support going strong. Thank you!
 
 
-**Uninstalling**
-
-Prismatic cleans up after itself. All plugin settings will be removed from your database when the plugin is uninstalled via the Plugins screen. NOTE that uninstalling the plugin will NOT touch any of your post content. Only the plugin options are removed when the plugin is uninstalled via the Plugins screen.
-
-
 **Restore Default Options**
 
 To restore default plugin options, either uninstall/reinstall the plugin or visit the Prismatic General Settings &gt; Restore default plugin options.
 
 
+**Uninstalling**
+
+This plugin cleans up after itself. All plugin settings will be removed from the WordPress database when the plugin is deleted via the WP Plugins screen.
+
+__Note:__ that uninstalling the plugin will NOT touch any of your post content. Only the plugin options are removed when the plugin is uninstalled via the Plugins screen.
+
+
 
 == Upgrade Notice ==
 
-To upgrade Prismatic, remove the old version and replace with the new version. Or just click "Update" from the Plugins screen and let WordPress do it for you automatically.
-
-__Note:__ uninstalling the plugin from the WP Plugins screen results in the removal of all settings from the WP database. 
+Visit the WordPress Plugins screen, locate the plugin, and click "Update" :)
 
 
 
@@ -228,7 +273,14 @@ As of Prismatic version 2.3, code snippets inside of ACF fields are highlighted 
 
 **How to make highlighting work with Autoptimize?**
 
-For Prismatic plugin to work with Autoptimize, a script needs to be excluded. For details, check out [this post](https://ncoughlin.com/prismatic-syntax-highlighter-compatibility-autoptimize-plugin/) by Nick Coughlin.
+For Prismatic plugin to work with Autoptimize, a script needs to be excluded. Follow these steps:
+
+1. Go to Autoptimize Settings &gt; Javascript Options &gt; Exclude scripts from Autoptimize
+2. Add the following to the excluded scripts list:
+
+`wp-content/plugins/prismatic/lib/highlight/js/highlight-core.js`
+
+Save changes and done. You may need to empty cache and/or force-reload your web browser for the script to load and changes to take effect.
 
 
 **How to disable block styles on frontend?**
@@ -299,19 +351,12 @@ Send any questions or feedback via my [contact form](https://plugin-planet.com/s
 Thank you to everyone providing feedback! If you like Prismatic, please take a moment to [give a 5-star rating](https://wordpress.org/support/plugin/prismatic/reviews/?rate=5#new-post). It helps to keep development and support going strong. Thank you!
 
 
-**3.5 (2025/03/20)**
+**3.7.1 (2026/02/04)**
 
-* Improves loading of front-end assets
-* Updates Prism.js to version 1.30.0
-* Adds Prism.js language: Awk
-* Updates Highlight.js to version 11.10.0
-* Adds Highlight.js langauge: Awk
-* Removes `load_i18n()` function
-* Adds uninstall option `prismatic-dismiss-notice`
-* Bumps minimum required WP version
-* Updates plugin settings page
-* Generates new language template
-* Tests on WordPress 6.8
+* Fixes bug with `tagName` on all three blocks
+* Adds "Line Height" text input to Prism.js block
+* Updates plugin readme.txt/documentation
+* Tests on WordPress 6.9 + 7.0 (nightly)
 
 
 Full changelog @ [https://plugin-planet.com/wp/changelog/prismatic.txt](https://plugin-planet.com/wp/changelog/prismatic.txt)

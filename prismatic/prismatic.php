@@ -9,16 +9,14 @@
 	Author URI: https://plugin-planet.com/
 	Donate link: https://monzillamedia.com/donate.html
 	Requires at least: 4.7
-	Tested up to: 6.8
-	Stable tag: 3.5
-	Version:    3.5
+	Tested up to: 6.9
+	Stable tag: 3.7.1
+	Version:    3.7.1
 	Requires PHP: 5.6.20
 	Text Domain: prismatic
 	Domain Path: /languages
 	License: GPL v2 or later
-*/
-
-/*
+	
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License
 	as published by the Free Software Foundation; either version 
@@ -32,7 +30,7 @@
 	You should have received a copy of the GNU General Public License
 	with this program. If not, visit: https://www.gnu.org/licenses/
 	
-	Copyright 2025 Monzilla Media. All rights reserved.
+	Copyright 2016-2026 Monzilla Media. All rights reserved.
 */
 
 if (!defined('ABSPATH')) die();
@@ -55,6 +53,7 @@ if (!class_exists('Prismatic')) {
 				
 				add_action('admin_init',          array(self::$instance, 'check_plugin'));
 				add_action('admin_init',          array(self::$instance, 'check_version'));
+				add_action('init',                array(self::$instance, 'load_i18n'));
 				add_filter('plugin_action_links', array(self::$instance, 'action_links'), 10, 2);
 				add_filter('plugin_row_meta',     array(self::$instance, 'plugin_links'), 10, 2);
 				add_filter('admin_footer_text',   array(self::$instance, 'footer_text'), 10, 1);
@@ -163,7 +162,7 @@ if (!class_exists('Prismatic')) {
 		
 		private function constants() {
 			
-			if (!defined('PRISMATIC_VERSION')) define('PRISMATIC_VERSION', '3.5');
+			if (!defined('PRISMATIC_VERSION')) define('PRISMATIC_VERSION', '3.7.1');
 			if (!defined('PRISMATIC_REQUIRE')) define('PRISMATIC_REQUIRE', '4.7');
 			if (!defined('PRISMATIC_NAME'))    define('PRISMATIC_NAME',    'Prismatic');
 			if (!defined('PRISMATIC_AUTHOR'))  define('PRISMATIC_AUTHOR',  'Jeff Starr');
@@ -296,6 +295,12 @@ if (!class_exists('Prismatic')) {
 				}
 				
 			}
+			
+		}
+		
+		public function load_i18n() {
+			
+			load_plugin_textdomain('prismatic', false, dirname(PRISMATIC_FILE) .'/languages/');
 			
 		}
 		

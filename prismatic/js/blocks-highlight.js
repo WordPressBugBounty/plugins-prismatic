@@ -144,7 +144,7 @@ registerBlockType('prismatic/blocks', {
 				el(
 					PlainText,
 					{
-						tagName     : 'pre',
+						tagname     : 'pre',
 						key         : 'editable',
 						placeholder : __('Add code..', 'prismatic'),
 						className   : className,
