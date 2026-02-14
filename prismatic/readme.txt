@@ -10,8 +10,8 @@ Author URI: https://plugin-planet.com/
 Donate link: https://monzillamedia.com/donate.html
 Requires at least: 4.7
 Tested up to: 6.9
-Stable tag: 3.7.1
-Version:    3.7.1
+Stable tag: 3.7.2
+Version:    3.7.2
 Requires PHP: 5.6.20
 Text Domain: prismatic
 Domain Path: /languages
@@ -179,7 +179,7 @@ You are now ready to go. To add a code snippet to any WP Post or Page:
 * If using Gutenberg Block Editor, click on the Prismatic block
 * If using Classic Editor, click on the Prismatic TinyMCE button
 
-To get a better idea, view the screenshots on the [Prismatic homepage](https://wordpress.org/plugins/prismatic/).
+To get a better idea, view the screenshots on the [Prismatic homepage](https://wordpress.org/plugins/prismatic/#screenshots).
 
 The Prismatic block or button makes it easy to add your code snippet and choose a language. The plugin automatically will output the correct markup to display your code with syntax highlighting. No code editing required!
 
@@ -351,11 +351,9 @@ Send any questions or feedback via my [contact form](https://plugin-planet.com/s
 Thank you to everyone providing feedback! If you like Prismatic, please take a moment to [give a 5-star rating](https://wordpress.org/support/plugin/prismatic/reviews/?rate=5#new-post). It helps to keep development and support going strong. Thank you!
 
 
-**3.7.1 (2026/02/04)**
+**3.7.2 (2026/02/13)**
 
-* Fixes bug with `tagName` on all three blocks
-* Adds "Line Height" text input to Prism.js block
-* Updates plugin readme.txt/documentation
+* Fixes bug with line-number block
 * Tests on WordPress 6.9 + 7.0 (nightly)
 
 

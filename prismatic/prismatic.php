@@ -10,8 +10,8 @@
 	Donate link: https://monzillamedia.com/donate.html
 	Requires at least: 4.7
 	Tested up to: 6.9
-	Stable tag: 3.7.1
-	Version:    3.7.1
+	Stable tag: 3.7.2
+	Version:    3.7.2
 	Requires PHP: 5.6.20
 	Text Domain: prismatic
 	Domain Path: /languages
@@ -162,7 +162,7 @@ if (!class_exists('Prismatic')) {
 		
 		private function constants() {
 			
-			if (!defined('PRISMATIC_VERSION')) define('PRISMATIC_VERSION', '3.7.1');
+			if (!defined('PRISMATIC_VERSION')) define('PRISMATIC_VERSION', '3.7.2');
 			if (!defined('PRISMATIC_REQUIRE')) define('PRISMATIC_REQUIRE', '4.7');
 			if (!defined('PRISMATIC_NAME'))    define('PRISMATIC_NAME',    'Prismatic');
 			if (!defined('PRISMATIC_AUTHOR'))  define('PRISMATIC_AUTHOR',  'Jeff Starr');

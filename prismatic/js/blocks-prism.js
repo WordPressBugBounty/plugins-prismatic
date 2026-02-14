@@ -192,7 +192,11 @@ registerBlockType('prismatic/blocks', {
 			language      = props.attributes.language,
 			lineHighlight = props.attributes.lineHighlight;
 		
-		return el('pre', { 'data-line': lineHighlight }, el('code', { className: 'language-'+ language }, content));
+		if (lineHighlight) {
+			return el('pre', { 'data-line': lineHighlight }, el('code', { className: 'language-'+ language }, content));
+		} else {
+			return el('pre', null, el('code', { className: 'language-'+ language }, content));
+		}
 		
 	},
 });
