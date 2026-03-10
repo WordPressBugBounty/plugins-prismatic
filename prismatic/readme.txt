@@ -9,9 +9,9 @@ Contributors: specialk
 Author URI: https://plugin-planet.com/
 Donate link: https://monzillamedia.com/donate.html
 Requires at least: 4.7
-Tested up to: 6.9
-Stable tag: 3.7.2
-Version:    3.7.2
+Tested up to: 7.0
+Stable tag: 3.7.3
+Version:    3.7.3
 Requires PHP: 5.6.20
 Text Domain: prismatic
 Domain Path: /languages
@@ -351,10 +351,10 @@ Send any questions or feedback via my [contact form](https://plugin-planet.com/s
 Thank you to everyone providing feedback! If you like Prismatic, please take a moment to [give a 5-star rating](https://wordpress.org/support/plugin/prismatic/reviews/?rate=5#new-post). It helps to keep development and support going strong. Thank you!
 
 
-**3.7.2 (2026/02/13)**
+**3.7.3 (2026/03/10)**
 
-* Fixes bug with line-number block
-* Tests on WordPress 6.9 + 7.0 (nightly)
+* Improves sanitization of prismatic shortcode
+* Tests on WordPress 6.9 + 7.0
 
 
 Full changelog @ [https://plugin-planet.com/wp/changelog/prismatic.txt](https://plugin-planet.com/wp/changelog/prismatic.txt)

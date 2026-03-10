@@ -112,6 +112,8 @@ function prismatic_decode($text) {
 			
 			$content = preg_replace("/^\s*?\n/", "\n", $content);
 			
+			$atts = preg_replace('/[^a-z0-9\-\_\s\"\.\,\=]/i', '', $atts);
+			
 			$content = '<code'. $atts .'>'. esc_html($content) .'</code>';
 			
 		}
