@@ -92,6 +92,14 @@ function prismatic_encode($text) {
 
 function prismatic_decode($text) {
 	
+	global $prismatic_options_general;
+	
+	$options = $prismatic_options_general;
+	
+	$library = isset($options['library']) ? $options['library'] : null;
+	
+	//
+	
 	if (!is_string($text)) return $text;
 	
 	$output = '';
@@ -112,9 +120,27 @@ function prismatic_decode($text) {
 			
 			$content = preg_replace("/^\s*?\n/", "\n", $content);
 			
-			$atts = preg_replace('/[^a-z0-9\-\_\s\"\.\,\=]/i', '', $atts);
+			//
 			
-			$content = '<code'. $atts .'>'. esc_html($content) .'</code>';
+			$code = prismatic_parse_get_doc($atts);
+			
+			if ($library === 'prism') {
+				
+				$class = prismatic_parse_prism($code);
+				
+			} elseif ($library === 'highlight') {
+				
+				$class = prismatic_parse_highlight($code);
+				
+			} else {
+				
+				$class = '';
+				
+			}
+			
+			$data_line = prismatic_parse_prism_addons($code);
+			
+			$content = '<code class="'. esc_attr($class) .'" data-line="'. esc_attr($data_line) .'">'. esc_html($content) .'</code>';
 			
 		}
 		
@@ -125,6 +151,88 @@ function prismatic_decode($text) {
 	return $output;
 	
 }
+
+//
+
+function prismatic_parse_get_doc($atts) {
+	
+	$code = '<code'. $atts .'></code>';
+	
+	$doc = new DOMDocument();
+	
+	@$doc->loadHTML($code);
+	
+	return $doc->getElementsByTagName('code');
+	
+}
+
+function prismatic_parse_highlight($code) {
+	
+	foreach ($code as $key => $value) {
+		
+		$class = $value->getAttribute('class');
+		
+		$array = prismatic_highlight_classes_full();
+		
+		foreach ($array as $a) {
+			
+			if (in_array($class, $a)) {
+				
+				return $class;
+				
+			}
+			
+		}
+		
+	}
+	
+	return '';
+	
+}
+
+function prismatic_parse_prism($code) {
+	
+	foreach ($code as $key => $value) {
+		
+		$class = $value->getAttribute('class');
+		
+		$array = prismatic_prism_classes();
+		
+		foreach ($array as $a) {
+			
+			if (in_array($class, $a)) {
+				
+				return $class;
+				
+			}
+			
+		}
+		
+	}
+	
+	return '';
+	
+}
+
+function prismatic_parse_prism_addons($code) {
+	
+	foreach ($code as $key => $value) {
+		
+		$data_line = $value->getAttribute('data-line');
+		
+		$array = prismatic_prism_addons();
+		
+		$data_line = preg_replace('/[^0-9\-\_\s\.\,\=]/', '', $data_line);
+		
+		if ($data_line) return $data_line;
+		
+	}
+	
+	return '';
+	
+}
+
+//
 
 function prismatic_check_admin($library, $filter) {
 	

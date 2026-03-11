@@ -10,8 +10,8 @@ Author URI: https://plugin-planet.com/
 Donate link: https://monzillamedia.com/donate.html
 Requires at least: 4.7
 Tested up to: 7.0
-Stable tag: 3.7.3
-Version:    3.7.3
+Stable tag: 3.7.4
+Version:    3.7.4
 Requires PHP: 5.6.20
 Text Domain: prismatic
 Domain Path: /languages
@@ -351,9 +351,9 @@ Send any questions or feedback via my [contact form](https://plugin-planet.com/s
 Thank you to everyone providing feedback! If you like Prismatic, please take a moment to [give a 5-star rating](https://wordpress.org/support/plugin/prismatic/reviews/?rate=5#new-post). It helps to keep development and support going strong. Thank you!
 
 
-**3.7.3 (2026/03/10)**
+**3.7.4 (2026/03/11)**
 
-* Improves sanitization of prismatic shortcode
+* Adds whitelist sanitization for code attributes
 * Tests on WordPress 6.9 + 7.0
 
 
